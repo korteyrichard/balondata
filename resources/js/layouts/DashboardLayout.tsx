@@ -103,8 +103,8 @@ export default function DashboardLayout({ user, header, children }: DashboardLay
                     {renderNavigationItems(navigation, isMobile)}
                 </div>
 
-                <a href='https://wa.me/233597880435' className="w-[200px] ml-3 text-left mt-10 px-2 py-2 text-sm font-bold rounded-md text-sidebar-primary-foreground bg-sidebar-primary hover:bg-sidebar-primary/80 transition-colors">
-                    WhatsApp Us
+                <a href='https://t.me/himthats' className="w-[200px] ml-3 text-left mt-10 px-2 py-2 text-sm font-bold rounded-md text-sidebar-primary-foreground bg-sidebar-primary hover:bg-sidebar-primary/80 transition-colors">
+                    Contact Us
                 </a>
 
 

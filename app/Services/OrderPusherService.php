@@ -32,7 +32,7 @@ class OrderPusherService
             
             $beneficiaryPhone = $item->pivot->beneficiary_number;
             $variant = \App\Models\ProductVariant::find($item->pivot->product_variant_id);
-            $size = $variant && isset($variant->variant_attributes['size']) ? $variant->variant_attributes['size'] : null;
+            $size = $variant && isset($variant->variant_attributes['size']) ? strtoupper($variant->variant_attributes['size']) : null;
             $networkId = $this->getNetworkIdFromProduct($item->name);
             
             Log::info('Item details', [
